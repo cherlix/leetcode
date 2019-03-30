@@ -42,7 +42,24 @@
 class Solution {
 public:
     vector<int> countBits(int num) {
-        
+        vector<int> result(num + 1, 0);
+        if (num >= 1) {
+            result[1] = 1;
+        }
+        if (num >= 2) {
+            result[2] = 1;
+        }
+        int curPowOf2 = 2;
+        for (int i = 3; i <= num; ++i) {
+            if (i < curPowOf2 * 2) {
+                result[i] = result[curPowOf2] + result[i - curPowOf2];
+            } else {
+                result[i] = 1;
+                curPowOf2 *= 2;
+            }
+        } 
+
+        return result;
     }
 };
 

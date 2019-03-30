@@ -36,7 +36,20 @@
 class Solution {
 public:
     int getSum(int a, int b) {
-        
+        const int n = sizeof(int) * 8;
+        int index = n;
+        int result = 0;
+        int carry = 0;
+        while (index-- > 0) {
+            int val = (a & 0x1) + (b & 0x1) + carry;
+            result += (val & 0x1)  << (n - index - 1);
+
+            carry = (val >> 1);
+            a >>= 1;
+            b >>= 1;
+        }
+
+        return result;
     }
 };
 

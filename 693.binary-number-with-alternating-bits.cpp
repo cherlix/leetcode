@@ -53,7 +53,19 @@
 class Solution {
 public:
     bool hasAlternatingBits(int n) {
-        
+        int flag = -1;
+        while (n != 0) {
+            if (flag == -1) {
+                flag = n & 0x1;
+            } else {
+                if ((n & 0x1) ^ flag) == 0) {
+                    return false;
+                }
+                flag ^= 0x1;
+            }
+            n >>= 1;
+        }
+        return true;
     }
 };
 
