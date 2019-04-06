@@ -40,6 +40,9 @@ class Solution {
 public:
     int reversePairs(vector<int>& nums) {
         vector<int> sorted(nums.size(), 0);
+        for (int i = 0; i < nums.size(); ++i) {
+            upper_bound(sorted.)
+        }
     }
 };
 
