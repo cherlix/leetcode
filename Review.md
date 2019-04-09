@@ -11,6 +11,7 @@ Need to check optimal solution:
 
 Need to review:
 475: see if there is any other way.
+652: post/pre order can be used for detecting the tree structure, but in order is not.
 
 Need to debug:
 321: need to debug to find the bug.
