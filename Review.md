@@ -12,6 +12,10 @@ Need to check optimal solution:
 Need to review:
 475: see if there is any other way.
 652: post/pre order can be used for detecting the tree structure, but in order is not.
+136: use XOR.
+169: Moore voting problem.
+13:  Review the clean code.
+242: Use array rather than map when the input range is small.
 
 Need to debug:
 321: need to debug to find the bug.
