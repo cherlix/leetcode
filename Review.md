@@ -3,6 +3,8 @@ Need to rewrite:
 486: GOOD ANALYSIS! Please read.
 363: TLE.
 368: TLE.
+172: Didn't resolve.
+234: Optimal solution.
 
 Need to check optimal solution:
 318: too slow.
