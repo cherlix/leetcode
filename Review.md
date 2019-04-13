@@ -18,6 +18,10 @@ Need to review:
 169: Moore voting problem.
 13:  Review the clean code.
 242: Use array rather than map when the input range is small.
+287: Review the discussion.
 
 Need to debug:
 321: need to debug to find the bug.
+
+Need to discover:
+94:  check next challenges for tree.
