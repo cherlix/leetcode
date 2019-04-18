@@ -6,6 +6,9 @@ Need to rewrite:
 172: Didn't resolve.
 234: Optimal solution.
 
+Need to rewrite: (Don't use any data structure or algorithm, need aha moment)
+11:  TLE for log(n^2), need log(n).
+
 Need to check optimal solution:
 318: too slow.
 486: bottom up DP solution.

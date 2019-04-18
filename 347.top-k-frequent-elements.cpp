@@ -50,7 +50,7 @@ public:
             ++memo[i];
         }
 
-        priority_queue<pair<int,int>, vector<pair<int, int>, CmpFn> queue; 
+        priority_queue<pair<int, int>, vector<pair<int, int>>, CmpFn> queue; 
         for (auto it : memo) {
             if (queue.size() < k) {
                 queue.push({it.first, it.second});
