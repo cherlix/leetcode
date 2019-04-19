@@ -41,13 +41,17 @@
 class Solution {
 public:
     bool findLowerBound(const vector<vector<int>>& matrix, int row, int col, int target) {
+        if (col < 0) {
+            return false;
+        }
+        
         int l = row, r = matrix.size() - 1;
         if (matrix[r][col] < target) {
             return false;
         }
 
         while (l < r) {
-            m = l + (r - l) / 2;
+            int m = l + (r - l) / 2;
             if (matrix[m][col] == target) {
                 return true;
             } else if (matrix[m][col] < target) {
@@ -57,15 +61,18 @@ public:
             }
         }
 
-        if (matrix[l][col] == target) {
+        if (l < matrix.size() && matrix[l][col] == target) {
             return true;
-        } else if (col == 0) {
+        } else if (col == 0 || l >= matrix.size()) {
             return false;
         } else {
             return findLowerBound(matrix, l, col - 1, target);
         }
     }
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        if (matrix.size() == 0) {
+            return false;
+        }
         return findLowerBound(matrix, 0, matrix[0].size() - 1, target);
     }
 };

@@ -5,6 +5,9 @@ Need to rewrite:
 368: TLE.
 172: Didn't resolve.
 234: Optimal solution.
+334: No clue without looking into discussion.
+73:  first column and row as marker.
+116: clean and simple optimial solution with O(1) space complexity.
 
 Need to rewrite: (Don't use any data structure or algorithm, need aha moment)
 11:  TLE for log(n^2), need log(n).
@@ -28,3 +31,4 @@ Need to debug:
 
 Need to discover:
 94:  check next challenges for tree.
+105: stack overflow when applying big array.

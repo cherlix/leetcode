@@ -41,14 +41,14 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             int max_val = 0;
             for (int j = 0; j < i; ++j) {
-                if (nums[j] <= nums[i]) {
+                if (nums[j] < nums[i]) {
                     max_val = max(blackboard[j], max_val);
                 }
             }
             blackboard[i] = max_val + 1;
             max_total = max(max_total, blackboard[i]);
         }
-        return max_total;
+        return max_total;        
     }
 };
 
