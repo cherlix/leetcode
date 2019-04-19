@@ -80,7 +80,7 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        
+        Node* marker
     }
 };
 
